@@ -27,8 +27,8 @@ header {
 
 /* Stilizzazione per il nome nell'header */
 header h2 {
-  margin: 0; /* Rimuove il margine predefinito */
-  color: #89c2d9; /* Colore del testo */
+  margin: 0;
+  color: #89c2d9;
   padding-left: 20px;
   font-size: 26px;
 }
@@ -43,15 +43,15 @@ header h2 {
 .nav-links a {
   color: #EEEEEE;
   text-decoration: none;
-  padding: 8px 12px;
+  padding: 8px 15px;
   font-size: 18px;
 }
 
 /* Aggiunge un effetto al passaggio del mouse sui link */
 .nav-links a.active,
 .nav-links a:hover {
-  color: #ffffff; /* Bianco per maggiore visibilità */
-  background-color: #3282B8; /* Colore di sfondo quando è attivo o al passaggio del mouse */
+  color: #ffffff;
+  background-color: #3282B8;
   border-radius: 3px;
 }
 
@@ -178,36 +178,36 @@ aside::before {
 
 
 h3{
-  font-size: 25px; /* Aumenta la dimensione del font per gli header e i paragrafi */
+  font-size: 25px;
 }
 
 p {
-  font-size: 18px; /* Aumenta la dimensione del font per i paragrafi */
+  font-size: 18px;
 }
 
 h2 {
-  font-size: 50px; /* Aumenta la dimensione del font per gli header */
+  font-size: 50px;
 
 }
 
 a {
-  font-size: 16px; /* Aumenta la dimensione del font per i link */
+  font-size: 16px;
   color: #007BFF;
 }
 
 .aboutme {
-  background-color: #1B262C; /* Aggiunge un colore di sfondo per la sezione */
+  background-color: #1B262C;
 }
 
 .section-title {
   text-align: center;
   margin-bottom: 20px;
-  padding-top: 80px; /* Aumenta lo spazio sopra il titolo */
+  padding-top: 80px;
 }
 
 .aboutme-content {
   text-align: left;
-  max-width: 1000px; /* Assicurati che questo valore sia coerente con altre sezioni per un allineamento uniforme */
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -258,130 +258,131 @@ a {
 }
 
 .aboutme-content h3, .aboutme-content p, .technology-section h3 {
-  margin-left: -20%; /* Aggiungi margine sinistro per allineare il testo come nella sezione superiore */
+  margin-left: -20%;
 }
 
-/* Assicurati che tutti i paragrafi siano coerenti con questa regolazione */
+
 p {
-  font-size: 18px; /* Regola la dimensione del testo se necessario */
+  font-size: 18px;
 }
 
 
 /* Stilizzazione del project */
 
 .projects-title {
-  text-align: center; /* Centra il titolo */
-  margin-bottom: 60px; /* Spazio sotto il titolo */
-  margin-top: 80px; /* Aumenta lo spazio sopra il titolo */
+  text-align: center;
+  margin-bottom: 60px;
+  margin-top: 80px;
 }
 
 .projects {
   background-image: linear-gradient(to bottom, #012a4a, #013a63, #01497c, #014f86, #2a6f97);
-  color: #ffffff; /* Assicurati che il testo sia leggibile, ad esempio usando colore bianco */
-  padding: 20px; /* Aggiungi padding per lo spazio interno */
+  color: #ffffff;
+  padding: 20px;
 }
 
 .projects-container {
   display: flex;
-  flex-wrap: wrap; /* Consente alle card di andare a capo automaticamente */
-  justify-content: space-between; /* Distribuisce le card uniformemente nello spazio disponibile */
-  padding: 0 20px; /* Aggiunge padding ai lati del contenitore per allineamento con altre sezioni */
-  max-width: 1000px; /* Assicura che la larghezza massima sia consistente con altre sezioni */
-  margin: auto; /* Centra il contenitore dei progetti */
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 20px;
+  max-width: 1000px;
+  margin: auto;
 }
 
 .project-card {
-  width: calc(50% - 10px); /* Calcola la larghezza tenendo conto dello spazio tra le card */
-  margin-bottom: 20px; /* Spazio verticale tra le card */
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Effetto ombra per una migliore visibilità */
-  background: #1B262C; /* Sfondo bianco per le card */
-  padding: 20px; /* Padding interno per i contenuti della card */
+  width: calc(50% - 10px);
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  background: #1B262C;
+  padding: 20px;
   display: flex;
-  flex-direction: column; /* Organizza i contenuti verticalmente */
+  flex-direction: column;
   border-radius: 3px;
   transition: transform 0.3s;
 }
 
 .project-card:hover {
-  transform: scale(1.05); /* Ingrandisce la card */
-  border: 2px solid #0582ca; /* Aggiunge bordi blu */
-  z-index: 10; /* Aumenta il z-index per mantenere la card sopra agli altri elementi durante l'hover */
+  transform: scale(1.05);
+  border: 2px solid #0582ca;
+  z-index: 10;
 }
 
 .project-card img {
-  width: 100%; /* L'immagine copre la larghezza intera della card */
-  height: auto; /* Mantiene il rapporto d'aspetto dell'immagine */
-  object-fit: cover; /* Assicura che l'immagine copra l'area designata senza deformarsi */
-  aspect-ratio: 1 / 1; /* Cerca di mantenere l'immagine il più quadrata possibile */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
 }
 
 .project-info {
   margin-top: 10px;
-  flex-grow: 1; /* Permette al contenuto di espandersi e riempire lo spazio disponibile */
-  text-align: left; /* Allinea il testo a sinistra */
+  flex-grow: 1;
+  text-align: left;
 }
 
 .project-info h4 {
-  margin-bottom: 20px; /* Spazio inferiore per separare il titolo dal paragrafo */
+  margin-bottom: 20px;
   font-size: 20px;
   color: #0582ca;
 }
 
 .project-card button {
-  width: 200px; /* Spazio sopra il pulsante */
+  width: 200px;
   height: 40px;
 }
 
 #contact h2 {
-  text-align: center; /* Centra il titolo della sezione */
+  text-align: center;
   padding-top: 80px;
 }
 
 #contact > div {
-  text-align: left; /* Allinea il testo a sinistra */
-  max-width: 600px; /* Imposta una larghezza massima per il contenuto interno */
-  margin: auto; /* Centra il contenitore div rispetto alla sezione */
-  padding: 20px; /* Aggiunge un po' di spazio intorno al contenuto */
+  text-align: left;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
 }
 
 #contact form {
-  display: flex; /* Imposta il layout del form a flex */
-  flex-direction: column; /* Organizza gli elementi in colonna */
-  align-items: flex-start; /* Allinea gli elementi a sinistra */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 
 
 #contact label {
-  margin-top: 10px; /* Aggiunge spazio sopra ogni etichetta */
+  margin-top: 10px;
 }
 
 #contact input[type="text"],
 #contact input[type="email"],
 #contact textarea {
-  width: 100%; /* Imposta la larghezza degli input e della textarea al 100% del loro contenitore */
-  padding: 8px; /* Aggiunge padding per migliorare l'usabilità */
-  margin-top: 5px; /* Spazio sopra ogni input */
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  color: black;
 }
 
 #contact textarea {
-  height: 150px; /* Imposta un'altezza per la textarea */
+  height: 150px;
 }
 
 #contact button {
-  align-self: flex-end; /* Allinea il pulsante di invio a destra */
-  padding: 10px 20px; /* Padding orizzontale e verticale per il pulsante */
-  margin-top: 20px; /* Spazio sopra il pulsante */
-  cursor: pointer; /* Cambia il cursore quando è sopra il pulsante */
+  align-self: flex-end;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
 }
 
 #contact button:hover {
-  background-color: #00a6fb; /* Cambia il colore di sfondo al passaggio del mouse */
-  color: white; /* Cambia il colore del testo al passaggio del mouse */
+  background-color: #00a6fb;
+  color: white;
 }
 
 #contact {
-  background-color: #1B262C; /* Colore di sfondo per l'header */
+  background-color: #1B262C;
 }
 
 #contact h3 {
@@ -393,33 +394,33 @@ p {
 /* Media Queries per dispositivi con larghezza inferiore a 1024px (tablet) */
 @media (max-width: 1450px) {
   .aboutme-content, .technology-section {
-      padding: 20px; /* Aumenta il padding per evitare il taglio del testo */
-      text-align: left; /* Assicura che il testo sia allineato a sinistra */
+      padding: 20px;
+      text-align: left;
   }
 
   .aboutme-content h3, .technology-section h3 {
-      font-size: 22px; /* Riduce la dimensione del font per i titoli */
-      margin-left: 0; /* Resetta i margini sinistri errati */
+      font-size: 22px;
+      margin-left: 0;
   }
 
   .aboutme p, .technology-section p {
-      font-size: 16px; /* Riduce la dimensione del font per i paragrafi */
-      margin: 10px 0; /* Aggiunge margini sopra e sotto il paragrafo per una migliore leggibilità */
+      font-size: 16px;
+      margin: 10px 0;
   }
 }
 
 /* Media Queries per dispositivi con larghezza inferiore a 768px (mobile) */
 @media (max-width: 860px) {
   .aboutme-content, .technology-section {
-      padding: 15px; /* Aumenta il padding per un migliore layout */
+      padding: 15px;
   }
 
   .aboutme-content h3, .technology-section h3 {
-      font-size: 20px; /* Riduce la dimensione del font per i titoli */
+      font-size: 20px;
   }
 
   .aboutme p, .technology-section p {
-      font-size: 14px; /* Riduce la dimensione del font per i paragrafi per una migliore leggibilità */
+      font-size: 14px;
   }
 
   /* Nasconde l'immagine nel lato della sezione About Me */
@@ -436,48 +437,48 @@ p {
 /* Media Queries per dispositivi con larghezza inferiore a 480px (mobile) */
 @media (max-width: 480px) {
   header h2 {
-      font-size: 22px; /* Riduce la dimensione del font per il nome nell'header */
+      font-size: 22px;
   }
 
   .nav-links a {
-      font-size: 16px; /* Riduce la dimensione del font per i link nell'header */
+      font-size: 16px;
   }
 
   .profile-content {
-      flex-direction: column; /* Organizza i contenuti in colonna */
-      align-items: center; /* Allinea i contenuti al centro */
+      flex-direction: column;
+      align-items: center;
   }
 
   .text-content {
-      text-align: center; /* Centra il testo */
+      text-align: center;
   }
 
   .social-links {
-      justify-content: center; /* Centra i link sociali */
+      justify-content: center;
   }
 
   .social-links img {
-      width: 30px; /* Riduce la dimensione delle icone sociali */
+      width: 30px;
   }
 
   .social-links img:hover {
-      transform: scale(1.1); /* Ingrandisce l'icona al passaggio del mouse */
+      transform: scale(1.1);
   }
 
   .aboutme-content h3, .technology-section h3 {
-      font-size: 18px; /* Riduce la dimensione del font per i titoli */
+      font-size: 18px;
   }
 
   .aboutme p, .technology-section p {
-      font-size: 14px; /* Riduce la dimensione del font per i paragrafi */
+      font-size: 14px;
   }
 
   .project-card {
-      width: 100%; /* Occupa l'intera larghezza del contenitore */
+      width: 100%;
   }
 
   .project-card img {
-      aspect-ratio: 16 / 9; /* Modifica il rapporto d'aspetto dell'immagine */
+      aspect-ratio: 16 / 9;
   }
 
   .project-info h4 {
