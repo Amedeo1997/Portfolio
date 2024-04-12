@@ -15,7 +15,6 @@ Welcome to the official repository for my personal portfolio website. This portf
 
 The website is designed to be fully responsive and interactive, featuring sections such as Home, About Me, Projects, and Contact. The site includes a dynamic typing effect, an interactive carousel for technical skills, and a portfolio gallery.
 
-![Portfolio Screenshot](./Images/portfolio_screenshot.png) *Include a screenshot of your portfolio here*
 
 ## Technologies Used
 
