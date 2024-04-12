@@ -1,49 +1,50 @@
-Ahmed Salhi's Portfolio
-Welcome to the repository for my personal portfolio website. This site showcases my skills, projects, and details about my professional journey as a Full Stack Developer. Below you'll find information on the structure of the site, technologies used, and instructions on how to set up the project on your local machine.
+# Ahmed Salhi's Portfolio
 
-Website Sections
-Home: A brief introduction and welcome message.
-About Me: Information about my background, education, and career goals.
-Projects: Highlights of my work, showcasing various projects I've worked on.
-Contact: A form to reach out to me for potential opportunities or inquiries.
-Technologies Used
-This website is built using HTML, CSS, and JavaScript with the following libraries and frameworks:
+Welcome to the official repository for my personal portfolio website. This portfolio showcases my skills as a Full Stack Developer, featuring sections about my background, projects, and contact information.
 
-Owl Carousel 2: For creating responsive carousel sliders.
-jQuery: Simplifies HTML DOM tree traversal and manipulation, event handling, and animation.
-Responsive Design: The site is fully responsive, ensuring it works on devices of all sizes.
-Key Features
-Dynamic Typing Effect: Implemented in the introduction to enhance visual engagement.
-Interactive Carousel: For showcasing technical skills using icons in the About Me section.
-Portfolio Gallery: Projects are displayed using cards that provide links to further details or live versions of the projects.
-Setup and Installation
-To run this portfolio website locally, you'll need to clone the repository to your computer and open the files in a web browser. Follow these steps:
+## Table of Contents
 
-Prerequisites
-Git installed on your system
-A modern web browser (e.g., Chrome, Firefox, Safari)
-Cloning the Repository
-Open your terminal.
+- [About the Project](#about-the-project)
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [License](#license)
 
-Change the current working directory to the location where you want the cloned directory.
+## About the Project
 
-Type the following command and press Enter:
+The website is designed to be fully responsive and interactive, featuring sections such as Home, About Me, Projects, and Contact. The site includes a dynamic typing effect, an interactive carousel for technical skills, and a portfolio gallery.
 
-bash
-Copy code
-git clone https://github.com/Amedeo1997/my-portfolio.git
-Replace https://github.com/Amedeo1997/my-portfolio.git with the URL of this repository.
+![Portfolio Screenshot](./Images/portfolio_screenshot.png) *Include a screenshot of your portfolio here*
 
-Running the Website
-After cloning the repository, navigate to the project directory and open the index.html file in your web browser.
+## Technologies Used
 
-bash
+- **HTML**
+- **CSS**
+- **JavaScript**
+- **jQuery**
+- **Owl Carousel 2**: For responsive carousel features.
+
+## Getting Started
+
+To get a local copy up and running, follow these simple steps.
+
+### Prerequisites
+
+- A modern web browser like Chrome, Firefox, or Safari.
+- Git installed on your machine.
+
+### Installation
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/Amedeo1997/my-portfolio.git
+
+Navigate to the project directory
+sh
 Copy code
 cd my-portfolio
-open index.html # On macOS
-# or double-click on index.html file in your file explorer
-Contributing
-Contributions to this project are welcome! Feel free to fork the repository, make changes, and submit pull requests. If you have any suggestions or find any issues, please feel free to file an issue on the GitHub repository.
-
-License
-This project is released under the MIT License. Please refer to the LICENSE file in the repository for more information.
+Open the index.html file in your web browser
+sh
+Copy code
+open index.html # or double-click the file in your file explorer
