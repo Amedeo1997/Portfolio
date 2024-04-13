@@ -51,4 +51,21 @@ document.addEventListener('DOMContentLoaded', function() {
   window.addEventListener('scroll', changeLinkState);
 
   typeEffect(); // Avvia l'effetto di digitazione
+
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+        }
+      });
+    }, {
+      threshold: 0.5 // Imposta il trigger quando il 50% dell'elemento è visibile
+    });
+
+    // Seleziona tutte le card e le registra all'observer
+    const projectCards = document.querySelectorAll('.project-card');
+    projectCards.forEach(card => observer.observe(card));
+
+
 });
