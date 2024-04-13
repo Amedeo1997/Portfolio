@@ -241,6 +241,11 @@ a {
     cursor: pointer;
 }
 
+.owl-carousel .owl-stage {
+  transition-timing-function: linear; 
+}
+
+
 .item img {
   width: 150px;
   height: 100px;
@@ -437,7 +442,7 @@ p {
 /* Media Queries per dispositivi con larghezza inferiore a 480px (mobile) */
 @media (max-width: 480px) {
   header h2 {
-      font-size: 22px;
+      font-size: 10px;
   }
 
   .nav-links a {

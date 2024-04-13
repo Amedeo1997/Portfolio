@@ -6,6 +6,10 @@
   <link rel="stylesheet" href="style.css">
   <title>Ahmed Salhi</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="Images/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="Images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="Images/icons/favicon-16x16.png">
+  <link rel="manifest" href="Images/icons/site.webmanifest">
 </head>
 <body>
   <header>
@@ -134,28 +138,31 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script>
-$(document).ready(function(){
-  $(".owl-carousel").owlCarousel({
-    loop: true,
-    margin: 10,
-    nav: false,
-    autoplay: true,
-    autoplayTimeout: 1000,
-    autoplayHoverPause: true,
-    responsive: {
-      0: {
-        items: 1
-      },
-      600: {
-        items: 3
-      },
-      1000: {
-        items: 5
-      }
-    }
-  });
-});
+    $(document).ready(function(){
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false,
+        autoplay: true,
+        autoplayTimeout: 1000,  // Aumentato per ridurre la frequenza di scorrimento
+        autoplayHoverPause: true,  // Rimossa la pausa al passaggio del mouse
+        autoplaySpeed: 1000,  // Velocità dell'animazione di scorrimento
+        slideTransition: 'linear',  // Transizione continua senza accelerazioni
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 3
+          },
+          1000: {
+            items: 5
+          }
+        }
+      });
+    });
     </script>
+
 
 </body>
 </html>
