@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   color: #EAEAEA;
+  font-family: "Roboto", sans-serif;
 }
 
 html {
@@ -23,14 +24,16 @@ header {
   z-index: 1000;
 }
 
-
-
 /* Stilizzazione per il nome nell'header */
 header h2 {
   margin: 0;
-  color: #89c2d9;
+  color: white;
   padding-left: 20px;
   font-size: 26px;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+
 }
 
 /* Stilizzazione del contenitore dei link */
@@ -65,13 +68,13 @@ header h2 {
   padding: 20px;
   min-height: 1000px;
   padding-top: 200px;
-    background-image: linear-gradient(to bottom, #012a4a, #013a63, #01497c, #014f86, #2a6f97);
+    background: linear-gradient(to bottom, #012a4a, #013a63, #01497c, #014f86, #2a6f97);
     color: #ffffff;
     padding: 20px;
 }
 
 .colorblue {
-  color: #89c2d9;
+  color: #00a6fb;
 
 }
 
@@ -107,6 +110,9 @@ strong {
 
 .text-content h2 {
   font-size: 36px;
+  font-family: "Titan One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .text-content p {
@@ -396,12 +402,20 @@ p {
 
 #contact {
   background-color: #1B262C;
+  padding-bottom: 30px;
 }
 
 #contact h3 {
   color: #0582ca;
   padding-top: 20px;
   padding-bottom: 10px;
+}
+
+footer {
+  background-color: black;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
 }
 
 /* Media Queries per dispositivi con larghezza inferiore a 1024px (tablet) */
@@ -496,5 +510,45 @@ p {
 
   .project-info h4 {
       font-size: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .technology-section {
+    padding: 10px 15px;  /* Riduci padding */
+    margin-top: 20px;    /* Riduci margine superiore se presente */
+  }
+
+  .owl-carousel {
+    margin-bottom: -200px; /* Riduci margine inferiore del carosello */
+  }
+
+  header h2 {
+    font-size: 12px;
+  }
+
+  .nav-links a {
+    font-size: 12px; /* Riduci la dimensione del testo nei link per risparmiare spazio */
+  }
+
+  .profile-content {
+    align-items: center; /* Centra verticalmente i contenuti nella sezione */
+  }
+
+  .text-content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  button {
+    margin: 20px auto; /* Centra il bottone e aggiungi margine per spazio */
+    display: block;
+  }
+
+  .profile-section {
+    margin-bottom: -200px; /* Riduci il padding superiore per spazio */
+    margin-top: -200px;
   }
 }
