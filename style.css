@@ -579,3 +579,34 @@ footer {
     margin-top: -200px;
   }
 }
+
+
+/* Stilizzazione della sezione di ringraziamento */
+
+.thank-you-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding-top: 150px; /* Adjust depending on your header */
+  text-align: center;
+  background: linear-gradient(to bottom, #012a4a, #013a63, #01497c, #014f86, #2a6f97);
+  color: #ffffff;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #3282B8;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #00a6fb;
+}
