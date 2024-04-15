@@ -22,7 +22,6 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('role').innerHTML = currentText + '<span class="cursor">|</span>';
 
     if (!deleting && currentText === role) {
-        // Testo completo: inizia a cancellare dopo una pausa
         setTimeout(() => { deleting = true; typeEffect(); }, pauseEnd);
     } else if (deleting && currentText === '') {
         // Testo completamente cancellato: cambia il ruolo e inizia a digitare nuovamente
@@ -66,6 +65,30 @@ document.addEventListener('DOMContentLoaded', function() {
     // Seleziona tutte le card e le registra all'observer
     const projectCards = document.querySelectorAll('.project-card');
     projectCards.forEach(card => observer.observe(card));
+
+    window.addEventListener('load', function() {
+      const minimumDisplayTime = 2000; // Tempo minimo di visualizzazione in millisecondi
+      const startTime = new Date().getTime();
+
+      const loader = document.getElementById('loading-screen');
+      const elapsedTime = new Date().getTime() - startTime;
+
+      if (elapsedTime < minimumDisplayTime) {
+        setTimeout(function() {
+          fadeOutLoader(loader);
+        }, minimumDisplayTime - elapsedTime);
+      } else {
+        fadeOutLoader(loader);
+      }
+    });
+
+    function fadeOutLoader(loader) {
+      loader.style.opacity = 0;
+      setTimeout(function() {
+        loader.style.display = 'none';
+      }, 500);
+    }
+
 
 
 });
